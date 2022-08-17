@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Winter Brand New Casual",
+        "categories": "Electronics",
+        "price": 85.02,
+        "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
+        "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
+        "ratingsAverage": 4.6,
+        "ratingsQuantity": 10,
+        "priceDiscount": 37,
+        "images": [
+            "hi",
+            "nai"
+        ]
+    },
+    {}
+]

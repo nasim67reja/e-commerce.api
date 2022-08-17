@@ -8,6 +8,10 @@ const productSchema = new mongoose.Schema(
       unique: true,
       trim: true,
     },
+    categories: {
+      type: String,
+      required: [true, 'A Product must be belong to a category'],
+    },
     ratingsAverage: {
       type: Number,
       default: 4.5,
@@ -36,7 +40,7 @@ const productSchema = new mongoose.Schema(
     },
     imageCover: {
       type: String,
-      required: [true, 'A Product must have a cover image'],
+      // required: [true, 'A Product must have a cover image'],
     },
     images: [String],
   },
