@@ -15,3 +15,11 @@
 ## Delete a Product
 
 - It's also same route like update or get a single product. put the id after get all product route and make a delete request
+
+## Filtering,Sorting,Limiting,Pagination
+
+- All the features(filtering,sorting,limiting,pagination) are available.
+- Filtering => `http://127.0.0.1:8000/api/v1/products?categories=Man`
+- Sorting => `http://127.0.0.1:8000/api/v1/products?sort=price`
+- Limiting => `http://127.0.0.1:8000/api/v1/products?fields=name,price,ratingsAverage`
+- Pagination => `http://127.0.0.1:8000/api/v1/products?page=1&limit=2`

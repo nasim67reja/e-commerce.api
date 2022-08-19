@@ -1,4 +1,5 @@
 const Product = require('../models/productModel');
+const APIFeatures = require('../utlis/apiFeatures');
 
 // middleware
 // exports.aliasTopTours = (req, res, next) => {
@@ -10,7 +11,13 @@ const Product = require('../models/productModel');
 
 exports.getAllProducts = async (req, res) => {
   try {
-    const products = await Product.find();
+    const features = new APIFeatures(Product.find(), req.query)
+      .filter()
+      .sort()
+      .limitFields()
+      .paginate();
+    const products = await features.query;
+
     res.status(200).json({
       status: 'success',
       results: products.length,
