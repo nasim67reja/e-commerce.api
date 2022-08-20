@@ -2,12 +2,12 @@ const Product = require('../models/productModel');
 const APIFeatures = require('../utlis/apiFeatures');
 
 // middleware
-// exports.aliasTopTours = (req, res, next) => {
-//   req.query.sort = '-ratingsAverage,price';
-//   req.query.limit = '5';
-//   req.query.fields = 'name,duration,price,ratingsAverage';
-//   next();
-// };
+exports.aliasTopRatedProducts = (req, res, next) => {
+  req.query.sort = '-ratingsAverage,price';
+  req.query.limit = '10';
+  req.query.fields = 'name,categories,price,ratingsAverage';
+  next();
+};
 
 exports.getAllProducts = async (req, res) => {
   try {

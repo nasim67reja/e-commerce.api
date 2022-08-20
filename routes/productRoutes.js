@@ -3,6 +3,14 @@ const productController = require('../controllers/productController');
 
 const router = express.Router();
 
+// don't put this below /:id route
+router
+  .route('/top-10-rated')
+  .get(
+    productController.aliasTopRatedProducts,
+    productController.getAllProducts
+  );
+
 router
   .route('/')
   .get(productController.getAllProducts)

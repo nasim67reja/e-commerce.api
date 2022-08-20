@@ -23,3 +23,9 @@
 - Sorting => `http://127.0.0.1:8000/api/v1/products?sort=price`
 - Limiting => `http://127.0.0.1:8000/api/v1/products?fields=name,price,ratingsAverage`
 - Pagination => `http://127.0.0.1:8000/api/v1/products?page=1&limit=2`
+
+## alias Route
+
+### Top Rated
+
+- to get top 10 rated products hit a `get` request in this route `http://127.0.0.1:8000/api/v1/products/top-10-rated`

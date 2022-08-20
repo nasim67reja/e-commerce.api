@@ -458,8 +458,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/light1.jpg",
-      "http://127.0.0.1:8000/Products/Home/light2.jpg"
+      "http://127.0.0.1:8000/Products/Home/light1.webp",
+      "http://127.0.0.1:8000/Products/Home/light2.webp"
     ],
     "id": "62ff697c4ddce1014d8a71c6"
   },
