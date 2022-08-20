@@ -5,7 +5,7 @@ const APIFeatures = require('../utlis/apiFeatures');
 exports.aliasTopRatedProducts = (req, res, next) => {
   req.query.sort = '-ratingsAverage,price';
   req.query.limit = '10';
-  req.query.fields = 'name,categories,price,ratingsAverage';
+  req.query.fields = 'name,categories,price,ratingsAverage,images';
   next();
 };
 
