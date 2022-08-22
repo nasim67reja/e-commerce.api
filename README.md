@@ -40,6 +40,19 @@
 
 - `http://127.0.0.1:8000/api/v1/users/login` hit a post request with `email & password` property
 
+### Forgot password
+
+- `http://127.0.0.1:8000/api/v1/users/forgotPassword` Hit this route a post request with your email
+
+### reset password
+
+- `http://127.0.0.1:8000/api/v1/users/resetPassword/238493824` Hit this route a patch request with your new password and confirm password.
+  **_note that here 238493824 is the resettoken_**
+
+### Update Current User password
+
+- `http://127.0.0.1:8000/api/v1/users/updateMyPassword` hit a patch request on this route with `passwordCurrent password and passwordConfirm` data
+
 ## User Data
 
 ### Get All User
