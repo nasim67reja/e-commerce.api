@@ -29,3 +29,19 @@
 ### Top Rated
 
 - to get top 10 rated products hit a `get` request in this route `http://127.0.0.1:8000/api/v1/products/top-10-rated`
+
+## Authentication
+
+### Sign Up Route
+
+- `http://127.0.0.1:8000/api/v1/users/signup` hit a post request with this `name email password passwordConfirm passwordChangedAt` property
+
+### Log In
+
+- `http://127.0.0.1:8000/api/v1/users/login` hit a post request with `email & password` property
+
+## User Data
+
+### Get All User
+
+- For getting all the user hit a get request in this `http://127.0.0.1:8000/api/v1/users` route

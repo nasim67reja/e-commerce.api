@@ -14,7 +14,11 @@ router
 
 router
   .route('/')
-  .get(authController.protect, productController.getAllProducts)
+  .get(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.getAllProducts
+  )
   .post(productController.createProduct);
 
 router
