@@ -30,7 +30,10 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
 });
 
 exports.getProduct = catchAsync(async (req, res, next) => {
-  const product = await Product.findById(req.params.id);
+  const product = await Product.findById(req.params.id).populate({
+    path: 'reviews',
+    select: 'review rating user createdAt',
+  });
 
   if (!product) return next(new AppError('No product found with that ID', 404));
 
