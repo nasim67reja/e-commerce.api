@@ -2,6 +2,7 @@ const Product = require('../models/productModel');
 const APIFeatures = require('../utlis/apiFeatures');
 const AppError = require('../utlis/appError');
 const catchAsync = require('../utlis/catchAsync');
+const factory = require('./handleFactory');
 
 // middleware
 exports.aliasTopRatedProducts = (req, res, next) => {
@@ -71,13 +72,15 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.deleteProduct = catchAsync(async (req, res, next) => {
-  const product = await Product.findByIdAndDelete(req.params.id);
+exports.deleteProduct = factory.deleteOne(Product);
 
-  if (!product) return next(new AppError('No product found with that ID', 404));
+// catchAsync(async (req, res, next) => {
+//   const product = await Product.findByIdAndDelete(req.params.id);
 
-  res.status(204).json({
-    status: 'success',
-    data: null,
-  });
-});
+//   if (!product) return next(new AppError('No product found with that ID', 404));
+
+//   res.status(204).json({
+//     status: 'success',
+//     data: null,
+//   });
+// });
