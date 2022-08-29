@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const cookieParser = require('cookie-parser');
 
 const cors = require('cors');
 const AppError = require('./utlis/appError');
@@ -18,11 +19,20 @@ const app = express();
 
 // 1) GLOBAL MIDDLEWARES
 
+// Implement cors
+app.use(
+  cors({
+    origin: ['http://localhost:3000'],
+    credentials: true,
+  })
+);
+// Body parser, reading data from body into req.body
+app.use(express.json({ limit: '10kb' }));
+// cookie parser
+app.use(cookieParser());
+
 // Set security HTTP headers
 app.use(helmet());
-
-// Implement cors
-app.use(cors());
 
 // Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -36,9 +46,6 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again in an hour!',
 });
 app.use('/api', limiter);
-
-// Body parser, reading data from body into req.body
-app.use(express.json({ limit: '10kb' }));
 
 // Data sanitization against NoSQL query injection
 app.use(mongoSanitize());
@@ -66,6 +73,7 @@ app.use(express.static(`${__dirname}/public`));
 // Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
+  console.log(req.cookies);
   next();
 });
 
