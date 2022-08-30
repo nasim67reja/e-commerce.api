@@ -10,7 +10,6 @@ router.use('/:productId/reviews', reviewRouter);
 router
   .route('/top-10-rated')
   .get(
-    authController.protect,
     productController.aliasTopRatedProducts,
     productController.getAllProducts
   );
