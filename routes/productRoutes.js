@@ -14,6 +14,8 @@ router
     productController.getAllProducts
   );
 
+router.route('/product-category').get(productController.getProductCat);
+
 router
   .route('/')
   .get(productController.getAllProducts)
