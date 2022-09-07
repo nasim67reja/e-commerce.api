@@ -45,7 +45,10 @@ exports.updateMe = catchAsync(async (req, res, next) => {
 
 /////////////
 exports.deleteMe = catchAsync(async (req, res, next) => {
-  await User.findByIdAndUpdate(req.user.id, { active: false });
+  const user = await User.findById(req.user.id);
+  const verifyUser = await user.correctPassword(req.body.password);
+  console.log(verifyUser);
+  // await User.findByIdAndUpdate(req.user.id, { active: false });
 
   res.status(204).json({
     status: 'success',
