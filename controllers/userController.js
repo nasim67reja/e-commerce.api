@@ -45,14 +45,19 @@ exports.updateMe = catchAsync(async (req, res, next) => {
 
 /////////////
 exports.deleteMe = catchAsync(async (req, res, next) => {
-  const user = await User.findById(req.user.id);
+  const user = await User.findById(req.user.id).select('+password');
   const verifyUser = await user.correctPassword(req.body.password);
-  console.log(verifyUser);
+
+  if (!verifyUser) return next(new AppError('Your  password is wrong', 401));
+
   // await User.findByIdAndUpdate(req.user.id, { active: false });
+  user.active = false;
+
+  await user.save({ validateBeforeSave: false });
 
   res.status(204).json({
     status: 'success',
-    data: null,
+    data: { data: user },
   });
 });
 
