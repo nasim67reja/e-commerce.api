@@ -48,12 +48,12 @@ reviewSchema.pre(/^find/, function (next) {
 
   this.populate({
     path: 'user',
-    select: 'name ',
+    select: '-cart -role -active -__v -passwordChangedAt -email',
   });
   next();
 });
 
-// static method for rating
+// // static method for rating
 reviewSchema.statics.calcAverageRatings = async function (productId) {
   const stats = await this.aggregate([
     {
@@ -67,6 +67,10 @@ reviewSchema.statics.calcAverageRatings = async function (productId) {
       },
     },
   ]);
+  // await Product.findByIdAndUpdate(productId, {
+  //   ratingsQuantity: stats[0].nRating,
+  //   ratingsAverage: stats[0].avgRating,
+  // });
 
   if (stats.length > 0) {
     await Product.findByIdAndUpdate(productId, {
@@ -86,10 +90,10 @@ reviewSchema.post('save', function () {
   this.constructor.calcAverageRatings(this.product);
 });
 
-// findByIdAndUpdate
-// findByIdAndDelete
+// // findByIdAndUpdate
+// // findByIdAndDelete
 reviewSchema.pre(/^findOneAnd/, async function (next) {
-  this.r = await this.findOne();
+  this.r = await this.clone().findOne();
   // console.log(this.r);
   next();
 });
@@ -98,6 +102,7 @@ reviewSchema.post(/^findOneAnd/, async function () {
   // await this.findOne(); does NOT work here, query has already executed
   await this.r.constructor.calcAverageRatings(this.r.product);
 });
+
 const Review = mongoose.model('Review', reviewSchema);
 
 module.exports = Review;
