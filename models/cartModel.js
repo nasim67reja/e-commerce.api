@@ -23,5 +23,16 @@ const cartItemSchema = new mongoose.Schema(
   }
 );
 
+//Indexes
+cartItemSchema.index({ product: 1, user: 1 }, { unique: true });
+
+cartItemSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'product',
+    select: 'images name price summary ratingsAverage',
+  });
+  next();
+});
+
 const CartItem = mongoose.model('CartItem', cartItemSchema);
 module.exports = CartItem;

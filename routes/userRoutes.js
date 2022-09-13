@@ -5,7 +5,7 @@ const cartItemRouter = require('./cartRoutes');
 ///// 3. ROUTES
 
 const router = express.Router();
-router.use('/:productId/carts', cartItemRouter);
+router.use('/:userId/carts', cartItemRouter);
 
 router.post('/signup', authController.signup);
 router.post('/login', authController.login);

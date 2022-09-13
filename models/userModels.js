@@ -48,12 +48,6 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
-    cart: [
-      {
-        type: mongoose.Schema.ObjectId,
-        ref: 'Product',
-      },
-    ],
   },
   {
     toJSON: { virtuals: true },
@@ -63,6 +57,12 @@ const userSchema = new mongoose.Schema(
 
 userSchema.virtual('reviews', {
   ref: 'Review',
+  foreignField: 'user',
+  localField: '_id',
+});
+
+userSchema.virtual('cartItems', {
+  ref: 'CartItem',
   foreignField: 'user',
   localField: '_id',
 });
@@ -79,15 +79,6 @@ userSchema.pre('save', function (next) {
   if (!this.isModified('password') || this.isNew) return next();
 
   this.passwordChangedAt = Date.now() - 1000; // need to understand
-  next();
-});
-
-// Populating User cart
-userSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'cart',
-    select: 'name price',
-  });
   next();
 });
 
