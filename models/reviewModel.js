@@ -67,11 +67,6 @@ reviewSchema.statics.calcAverageRatings = async function (productId) {
       },
     },
   ]);
-  // await Product.findByIdAndUpdate(productId, {
-  //   ratingsQuantity: stats[0].nRating,
-  //   ratingsAverage: stats[0].avgRating,
-  // });
-
   if (stats.length > 0) {
     await Product.findByIdAndUpdate(productId, {
       ratingsQuantity: stats[0].nRating,
@@ -80,7 +75,7 @@ reviewSchema.statics.calcAverageRatings = async function (productId) {
   } else {
     await Product.findByIdAndUpdate(productId, {
       ratingsQuantity: 0,
-      ratingsAverage: 4.5,
+      ratingsAverage: 0,
     });
   }
 };
