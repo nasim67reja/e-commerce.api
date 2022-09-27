@@ -9,8 +9,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/washingMachine1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/washingMachine2.webp"
+      "washingMachine1.webp",
+      "washingMachine2.webp"
     ],
     "id": "62fc9f67fbb202a6698846a5"
   },
@@ -24,8 +24,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/digitalWatch1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/digitalWatch2.webp"
+      "digitalWatch1.webp",
+      "digitalWatch2.webp"
     ],
     "id": "62fca104fbb202a6698846af"
   },
@@ -39,8 +39,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/Xbox1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/Xbox2.webp"
+      "Xbox1.webp",
+      "Xbox2.webp"
     ],
     "id": "62fca17afbb202a6698846b4"
   },
@@ -54,8 +54,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/electricsaver1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/electricsaver2.webp"
+      "electricsaver1.webp",
+      "electricsaver2.webp"
     ],
     "id": "62fca23dfbb202a6698846bd"
   },
@@ -69,8 +69,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/hdphone1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/hdphone2.webp"
+      "hdphone1.webp",
+      "hdphone2.webp"
     ],
     "id": "62fca2c0fbb202a6698846c0"
   },
@@ -83,8 +83,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/T-shirt1.webp",
-      "http://127.0.0.1:8000/Products/Man/T-shirt2.webp"
+      "T-shirt1.webp",
+      "T-shirt2.webp"
     ],
     "_id": "62fcc17fbb73d8956631391c",
     "id": "62fcc17fbb73d8956631391c"
@@ -99,8 +99,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/Jacket1.webp",
-      "http://127.0.0.1:8000/Products/Man/Jacket2.webp"
+      "Jacket1.webp",
+      "Jacket2.webp"
     ],
     "id": "62fcc23ad10f355c0c36f2b5"
   },
@@ -114,8 +114,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/westernjacket1.webp",
-      "http://127.0.0.1:8000/Products/Man/westernjacket2.webp"
+      "westernjacket1.webp",
+      "westernjacket2.webp"
     ],
     "id": "62fcc2c4d10f355c0c36f2b8"
   },
@@ -129,8 +129,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/menshort2.webp",
-      "http://127.0.0.1:8000/Products/Man/menshort1.webp"
+      "menshort2.webp",
+      "menshort1.webp"
     ],
     "id": "62fcc5f1d10f355c0c36f2bb"
   },
@@ -144,8 +144,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/poloshirt1.webp",
-      "http://127.0.0.1:8000/Products/Man/poloshirt2.webp"
+      "poloshirt1.webp",
+      "poloshirt2.webp"
     ],
     "id": "62fcc64fd10f355c0c36f2bd"
   },
@@ -159,8 +159,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/aioTshirt1.webp",
-      "http://127.0.0.1:8000/Products/Man/aioTshirt2.webp"
+      "aioTshirt1.webp",
+      "aioTshirt2.webp"
     ],
     "id": "62ff20f8a2abb3a1d0d0f8ba"
   },
@@ -174,8 +174,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/orTshirt1.webp",
-      "http://127.0.0.1:8000/Products/Man/orTshirt2.webp"
+      "orTshirt1.webp",
+      "orTshirt2.webp"
     ],
     "id": "62ff21dba2abb3a1d0d0f8bd"
   },
@@ -189,8 +189,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/pTshirt1.webp",
-      "http://127.0.0.1:8000/Products/Man/pTshirt2.webp"
+      "pTshirt1.webp",
+      "pTshirt2.webp"
     ],
     "id": "62ff2254a2abb3a1d0d0f8bf"
   },
@@ -204,8 +204,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Man/jack1.webp",
-      "http://127.0.0.1:8000/Products/Man/jack2.webp"
+      "jack1.webp",
+      "jack2.webp"
     ],
     "id": "62ff2306a2abb3a1d0d0f8c2"
   },
@@ -219,8 +219,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/refri1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/refri2.webp"
+      "refri1.webp",
+      "refri2.webp"
     ],
     "id": "62ff23f3d419659b8b35836e"
   },
@@ -234,8 +234,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/powerBank1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/powerBank2.webp"
+      "powerBank1.webp",
+      "powerBank2.webp"
     ],
     "id": "62ff247bd419659b8b358376"
   },
@@ -249,8 +249,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/vr1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/vr2.webp"
+      "vr1.webp",
+      "vr2.webp"
     ],
     "id": "62ff24dcd419659b8b358378"
   },
@@ -264,8 +264,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/applesmartwatch1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/applesmartwatch2.webp"
+      "applesmartwatch1.webp",
+      "applesmartwatch2.webp"
     ],
     "id": "62ff259bd419659b8b35837b"
   },
@@ -279,8 +279,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Electronics/Fan1.webp",
-      "http://127.0.0.1:8000/Products/Electronics/Fan2.webp"
+      "Fan1.webp",
+      "Fan2.webp"
     ],
     "id": "62ff2600d419659b8b35837e"
   },
@@ -294,8 +294,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/vin2.webp",
-      "http://127.0.0.1:8000/Products/Women/vin1.webp"
+      "vin2.webp",
+      "vin1.webp"
     ],
     "id": "62ff6180d57a414395bdb6fe"
   },
@@ -309,8 +309,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/skirt2.jpg",
-      "http://127.0.0.1:8000/Products/Women/skirt1.jpg"
+      "skirt2.jpg",
+      "skirt1.jpg"
     ],
     "id": "62ff62ead57a414395bdb700"
   },
@@ -324,8 +324,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/bag2.jpg",
-      "http://127.0.0.1:8000/Products/Women/bag1.jpg"
+      "bag2.jpg",
+      "bag1.jpg"
     ],
     "id": "62ff6332d57a414395bdb702"
   },
@@ -339,8 +339,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/vintage2.webp",
-      "http://127.0.0.1:8000/Products/Women/vintage1.webp"
+      "vintage2.webp",
+      "vintage1.webp"
     ],
     "id": "62ff661e51ff8257da64fe24"
   },
@@ -354,8 +354,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/ving1.webp",
-      "http://127.0.0.1:8000/Products/Women/ving2.webp"
+      "ving1.webp",
+      "ving2.webp"
     ],
     "id": "62ff669051ff8257da64fe26"
   },
@@ -369,8 +369,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/printed1.webp",
-      "http://127.0.0.1:8000/Products/Women/printed2.webp"
+      "printed1.webp",
+      "printed2.webp"
     ],
     "id": "62ff673051ff8257da64fe28"
   },
@@ -384,8 +384,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Women/blaous2.jpg",
-      "http://127.0.0.1:8000/Products/Women/blaous1.webp"
+      "blaous2.jpg",
+      "blaous1.webp"
     ],
     "id": "62ff67b251ff8257da64fe2b"
   },
@@ -399,8 +399,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/seatstyl2.jpg",
-      "http://127.0.0.1:8000/Products/Home/seatstyl1.webp"
+      "seatstyl2.jpg",
+      "seatstyl1.webp"
     ],
     "id": "62ff67c24ddce1014d8a71bc"
   },
@@ -414,8 +414,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/serta1.jpg",
-      "http://127.0.0.1:8000/Products/Home/serta2.jpg"
+      "serta1.jpg",
+      "serta2.jpg"
     ],
     "id": "62ff68e64ddce1014d8a71c1"
   },
@@ -429,8 +429,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/light2.webp",
-      "http://127.0.0.1:8000/Products/Home/light1.webp"
+      "light2.webp",
+      "light1.webp"
     ],
     "id": "62ff697c4ddce1014d8a71c6"
   },
@@ -444,8 +444,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/kettle1.webp",
-      "http://127.0.0.1:8000/Products/Home/kettle2.webp"
+      "kettle1.webp",
+      "kettle2.webp"
     ],
     "id": "62ff687c4ddce1014d8a71be"
   },
@@ -459,8 +459,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/chair2.webp",
-      "http://127.0.0.1:8000/Products/Home/chair1.jpg"
+      "chair2.webp",
+      "chair1.jpg"
     ],
     "id": "62ff65de4ddce1014d8a71b0"
   },
@@ -474,8 +474,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/sofa2.webp",
-      "http://127.0.0.1:8000/Products/Home/sofa1.webp"
+      "sofa2.webp",
+      "sofa1.webp"
     ],
     "id": "62ff66844ddce1014d8a71b7"
   },
@@ -489,8 +489,8 @@
     "summary": "Rand McNally Vehicle Link ELD (Electronic Logging Device), FMCSA Compliant, 9-Pin J1939, Android Only, Subscription Required (VL21)",
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
-      "http://127.0.0.1:8000/Products/Home/twoseat2.webp",
-      "http://127.0.0.1:8000/Products/Home/twoseat1.webp"
+      "twoseat2.webp",
+      "twoseat1.webp"
     ],
     "id": "62ff674d4ddce1014d8a71ba"
   }
