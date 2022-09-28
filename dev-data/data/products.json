@@ -280,7 +280,7 @@
     "description": "SIMPLE TO INSTALL - Vehicle Link ELD has a standard 9-pin (J1939) ECM connector. An adapter is required for OBD-II or 6-pin ECM ports.",
     "images": [
       "Fan1.webp",
-      "Fan2.webp"
+      "fan2.webp"
     ],
     "id": "62ff2600d419659b8b35837e"
   },
