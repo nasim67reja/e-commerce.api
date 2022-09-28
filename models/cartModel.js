@@ -29,7 +29,7 @@ cartItemSchema.index({ product: 1, user: 1 }, { unique: true });
 cartItemSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'product',
-    select: 'images name price summary ratingsAverage categories',
+    select: 'images name price ratingsAverage categories',
   });
   next();
 });
