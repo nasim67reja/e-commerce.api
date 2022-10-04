@@ -40,16 +40,16 @@ app.use(
 );
 // app.use(cors());
 
-app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', true);
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-  res.header(
-    'Access-Control-Allow-Headers',
-    'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
-  );
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Credentials', true);
+//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+//   res.header(
+//     'Access-Control-Allow-Headers',
+//     'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
+//   );
+//   next();
+// });
 
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
@@ -101,6 +101,10 @@ app.use((req, res, next) => {
   // console.log(req.cookies);
   next();
 });
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('CareoCIty-ecommerce/build'));
+}
 
 ///// 2. ROUTES:
 
