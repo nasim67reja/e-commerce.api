@@ -6,7 +6,7 @@ exports.aliasTopRatedProducts = (req, res, next) => {
   req.query.sort = '-ratingsAverage,price';
   req.query.limit = '10';
   req.query.fields =
-    'name,categories,price,ratingsAverage,images,ratingsQuantity';
+    'name,categories,price,ratingsAverage,images,ratingsQuantity,priceDiscount';
   next();
 };
 

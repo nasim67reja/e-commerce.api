@@ -23,7 +23,7 @@ const app = express();
 // Implement cors
 app.use(
   cors({
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
     credentials: true,
   })
 );
