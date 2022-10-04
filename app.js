@@ -27,11 +27,17 @@ const app = express();
 //     credentials: true,
 //   })
 // );
+// app.use(
+//   cors({
+//     origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
+//     optionsSuccessStatus: 200,
+//     credentials: true,
+//   })
+// );
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
+    origin: 'https://nasim67reja.github.io',
     optionsSuccessStatus: 200,
-    credentials: true,
   })
 );
 // Body parser, reading data from body into req.body
