@@ -36,7 +36,7 @@ const app = express();
 // );
 app.use(
   cors({
-    origin: 'https://nasim67reja.github.io/CareoCIty-ecommerce/',
+    origin: 'https://pages.github.com/',
     optionsSuccessStatus: 200,
   })
 );
