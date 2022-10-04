@@ -21,9 +21,16 @@ const app = express();
 // 1) GLOBAL MIDDLEWARES
 
 // Implement cors
+// app.use(
+//   cors({
+//     origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
+//     credentials: true,
+//   })
+// );
 app.use(
   cors({
     origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
+    optionsSuccessStatus: 200,
     credentials: true,
   })
 );
