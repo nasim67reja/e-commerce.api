@@ -27,19 +27,30 @@ const app = express();
 //     credentials: true,
 //   })
 // );
-// app.use(
-//   cors({
-//     origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
-//     optionsSuccessStatus: 200,
-//     credentials: true,
-//   })
-// );
 app.use(
   cors({
-    origin: 'https://pages.github.com/',
+    origin: [
+      'http://localhost:3000',
+      'https://nasim67reja.github.io',
+      'https://nasim67reja.github.io/CareoCIty-ecommerce/',
+    ],
     optionsSuccessStatus: 200,
+    credentials: true,
   })
 );
+// app.use(cors());
+
+// app.use(function (req, res, next) {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Credentials', true);
+//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+//   res.header(
+//     'Access-Control-Allow-Headers',
+//     'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
+//   );
+//   next();
+// });
+
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
 // cookie parser
