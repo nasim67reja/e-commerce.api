@@ -17,7 +17,7 @@ mongoose
   // eslint-disable-next-line no-console
   .catch((err) => console.log(err.message));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console

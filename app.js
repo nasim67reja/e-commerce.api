@@ -102,6 +102,10 @@ app.use((req, res, next) => {
   next();
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('CareoCIty-ecommerce/build'));
+}
+
 ///// 2. ROUTES:
 
 app.use('/api/v1/products', productRouter);
