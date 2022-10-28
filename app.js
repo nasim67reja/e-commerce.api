@@ -1,11 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
-const helmet = require('helmet');
+// const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
+const path = require('path');
 
 const cors = require('cors');
 const AppError = require('./utlis/appError');
@@ -57,7 +58,7 @@ app.use(express.json({ limit: '10kb' }));
 app.use(cookieParser());
 
 // Set security HTTP headers
-app.use(helmet());
+// app.use(helmet());
 
 // Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -102,9 +103,9 @@ app.use((req, res, next) => {
   next();
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('CareoCIty-ecommerce/build'));
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('CareoCIty-ecommerce/build'));
+// }
 
 ///// 2. ROUTES:
 
@@ -112,6 +113,15 @@ app.use('/api/v1/products', productRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/carts', cartItemRouter);
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  app.use(express.static(`${__dirname}/client/build`));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));

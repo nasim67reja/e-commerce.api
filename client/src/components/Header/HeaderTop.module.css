@@ -1,0 +1,7 @@
+.customIcon ion-icon,
+.customI ion-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: white;
+}
