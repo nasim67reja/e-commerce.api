@@ -10,8 +10,8 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   const session = await stripe.checkout.sessions.create({
     expand: ['line_items'],
     payment_method_types: ['card'],
-    success_url: `${req.protocol}://${req.get('host')}/`,
-    cancel_url: `${req.protocol}://${req.get('host')}/${product.categories}`,
+    success_url: `https://nasim67reja.github.io/CareoCIty-ecommerce/`,
+    cancel_url: `https://nasim67reja.github.io/CareoCIty-ecommerce/#/${product.categories}`,
     customer_email: req.user.email,
     client_reference_id: req.params.productId,
     line_items: [
@@ -23,9 +23,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
             name: `${product.name} `,
             description: product.summary,
             images: [
-              `${req.protocol}://${req.get('host')}/Products/to/${
-                product.images[0]
-              }`,
+              `https://e-commerceapi.up.railway.app/Products/${product.categories}/${product.images[0]}`,
             ],
           },
         },

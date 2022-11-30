@@ -13,6 +13,7 @@ const AppError = require('./utlis/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
 const productRouter = require('./routes/productRoutes');
+// const userRouter = require('./routes/userRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const cartItemRouter = require('./routes/cartRoutes');
@@ -23,12 +24,7 @@ const app = express();
 // 1) GLOBAL MIDDLEWARES
 
 // Implement cors
-// app.use(
-//   cors({
-//     origin: ['http://localhost:3000', 'https://nasim67reja.github.io'],
-//     credentials: true,
-//   })
-// );
+
 app.use(
   cors({
     origin: [
@@ -40,18 +36,6 @@ app.use(
     credentials: true,
   })
 );
-// app.use(cors());
-
-// app.use(function (req, res, next) {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   res.header('Access-Control-Allow-Credentials', true);
-//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-//   res.header(
-//     'Access-Control-Allow-Headers',
-//     'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
-//   );
-//   next();
-// });
 
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
@@ -115,6 +99,12 @@ app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/carts', cartItemRouter);
 app.use('/api/v1/orders', orderRouter);
+
+// app.use('/api/v1/users', (req, res) => {
+//   res.status(200).json({
+//     status: 'success',
+//   });
+// });
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
