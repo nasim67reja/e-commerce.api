@@ -18,6 +18,7 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const cartItemRouter = require('./routes/cartRoutes');
 const orderRouter = require('./routes/orderRoutes');
+const orderController = require('./controllers/orderController');
 
 const app = express();
 
@@ -35,6 +36,14 @@ app.use(
     optionsSuccessStatus: 200,
     credentials: true,
   })
+);
+
+//  express.raw({ type: 'application/json' });
+
+app.post(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  orderController.webhookCheckout
 );
 
 // Body parser, reading data from body into req.body

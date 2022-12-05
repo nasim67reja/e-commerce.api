@@ -1,6 +1,9 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const catchAsync = require('../utlis/catchAsync');
 const Product = require('../models/productModel');
+const User = require('../models/userModels');
+const Order = require('../models/orderModel');
+const factory = require('./handleFactory');
 
 exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   //   1) Get the currently ordered product
@@ -39,3 +42,38 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
     session,
   });
 });
+
+const createOrderCheckout = async (session) => {
+  const product = session.client_reference_id;
+  const user = (await User.findOne({ email: session.customer_email })).id;
+  const price = session.amount_total / 100;
+  await Order.create({ product, user, price });
+};
+
+exports.webhookCheckout = (req, res, next) => {
+  const signature = req.headers['stripe-signature'];
+  console.log('I am from line 55');
+  let event;
+  try {
+    event = stripe.webhooks.constructEvent(
+      req.body,
+      signature,
+      process.env.STRIPE_WEBHOOK_SECRET
+    );
+  } catch (err) {
+    return res.status(400).send(`Webhook error: ${err.message}`);
+  }
+  console.log('I am from line 66');
+
+  if (event.type === 'checkout.session.completed')
+    createOrderCheckout(event.data.object);
+  console.log('I am from line 70');
+
+  res.status(200).json({ received: true });
+};
+
+exports.createOrder = factory.createOne(Order);
+exports.getOrder = factory.getOne(Order);
+exports.getAllOrders = factory.getAll(Order);
+exports.updateOrder = factory.updateOne(Order);
+exports.deleteOrder = factory.deleteOne(Order);
