@@ -6,7 +6,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
-const path = require('path');
+// const path = require('path');
 
 const cors = require('cors');
 const AppError = require('./utlis/appError');
@@ -30,6 +30,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:3000',
+      'http://localhost:3001',
       'https://nasim67reja.github.io',
       'https://nasim67reja.github.io/CareoCIty-ecommerce/',
     ],
@@ -97,10 +98,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static('CareoCIty-ecommerce/build'));
-// }
-
 ///// 2. ROUTES:
 
 app.use('/api/v1/products', productRouter);
@@ -108,21 +105,6 @@ app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/carts', cartItemRouter);
 app.use('/api/v1/orders', orderRouter);
-
-// app.use('/api/v1/users', (req, res) => {
-//   res.status(200).json({
-//     status: 'success',
-//   });
-// });
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-  app.use(express.static(`${__dirname}/client/build`));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-  });
-}
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
