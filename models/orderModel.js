@@ -23,6 +23,11 @@ const orderSchema = new mongoose.Schema({
     type: Boolean,
     default: true,
   },
+  status: {
+    type: String,
+    enum: ['pending', 'approved', 'completed'],
+    default: 'pending',
+  },
 });
 
 orderSchema.pre(/^find/, function (next) {
