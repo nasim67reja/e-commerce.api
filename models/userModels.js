@@ -25,6 +25,10 @@ const userSchema = new mongoose.Schema(
       enum: ['user', 'guide', 'lead-guide', 'admin'],
       default: 'user',
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
     password: {
       type: String,
       required: [true, 'Please provide a password'],
