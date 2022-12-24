@@ -18,7 +18,7 @@ const orderSchema = new mongoose.Schema(
     },
     createdAt: {
       type: Date,
-      default: Date.now(),
+      default: new Date(),
     },
     paid: {
       type: Boolean,
