@@ -16,11 +16,14 @@ router
 
 router.route('/product-category').get(productController.getProductCat);
 
-router.route('/').get(productController.getAllProducts).post(
-  authController.protect,
-  // authController.restrictTo('admin'),
-  productController.createProduct
-);
+router
+  .route('/')
+  .get(productController.getAllProducts)
+  .post(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.createProduct
+  );
 
 router
   .route('/:id')

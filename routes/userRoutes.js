@@ -28,16 +28,16 @@ router.patch(
 );
 router.patch('/deleteMe', userController.deleteMe);
 
-router.use(authController.restrictTo('admin'));
-
 router
   .route('/')
   .get(userController.getAllUsers)
-  .post(userController.createUser);
+  .post(authController.restrictTo('admin'), userController.createUser);
 
+router.route('/:id').get(userController.getUser);
+
+router.use(authController.restrictTo('admin'));
 router
   .route('/:id')
-  .get(userController.getUser)
   .patch(
     userController.uploadUserPhoto,
     userController.resizeUserPhoto,
