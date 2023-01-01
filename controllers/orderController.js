@@ -9,6 +9,15 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   //   1) Get the currently ordered product
   const product = await Product.findById(req.params.productId);
 
+  await Product.findByIdAndUpdate(
+    product,
+    { $inc: { sell: 1 } },
+    {
+      new: true,
+      runValidators: true,
+    }
+  );
+
   // 2) Create checkout session
   const session = await stripe.checkout.sessions.create({
     expand: ['line_items'],
@@ -47,6 +56,9 @@ const createOrderCheckout = async (session) => {
   const product = session.client_reference_id;
   const user = (await User.findOne({ email: session.customer_email })).id;
   const price = session.amount_total / 100;
+
+  // console.log(productR);
+
   await Order.create({ product, user, price });
 };
 

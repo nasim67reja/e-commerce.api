@@ -43,6 +43,10 @@ const productSchema = new mongoose.Schema(
       type: String,
       // required: [true, 'A Product must have a cover image'],
     },
+    sell: {
+      type: Number,
+      default: 0,
+    },
     images: [String],
   },
   {
