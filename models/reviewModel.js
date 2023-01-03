@@ -38,14 +38,6 @@ reviewSchema.index({ product: 1, user: 1 }, { unique: true });
 
 //  QUERY MIDDLEWATE
 reviewSchema.pre(/^find/, function (next) {
-  // this.populate({
-  //   path: 'user',
-  //   select: 'name',
-  // }).populate({
-  //   path: 'product',
-  //   select: 'name summary',
-  // });
-
   this.populate({
     path: 'user',
     select: '-cart -role -active -__v -passwordChangedAt -email',

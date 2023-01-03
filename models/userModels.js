@@ -71,6 +71,11 @@ userSchema.virtual('cartItems', {
   foreignField: 'user',
   localField: '_id',
 });
+userSchema.virtual('orders', {
+  ref: 'Order',
+  foreignField: 'user',
+  localField: '_id',
+});
 
 // // encryption or hashing password
 userSchema.pre('save', async function (next) {

@@ -10,11 +10,11 @@ const orderSchema = new mongoose.Schema(
     user: {
       type: mongoose.Schema.ObjectId,
       ref: 'User',
-      required: [true, 'Booking must belong to a User!'],
+      required: [true, 'Order must belong to a User!'],
     },
     price: {
       type: Number,
-      require: [true, 'Booking must have a price.'],
+      require: [true, 'Order must have a price.'],
     },
     createdAt: {
       type: Date,

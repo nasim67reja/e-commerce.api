@@ -103,7 +103,8 @@ exports.getAllUsers = factory.getAll(User);
 exports.getUser = factory.getOne(
   User,
   { path: 'reviews' },
-  { path: 'cartItems' }
+  { path: 'cartItems' },
+  { path: 'orders' }
 );
 // do not update passwords with this
 exports.updateUser = factory.updateOne(User);

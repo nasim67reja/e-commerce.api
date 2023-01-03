@@ -9,6 +9,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
   //   1) Get the currently ordered product
   const product = await Product.findById(req.params.productId);
 
+  // this will increment sell after a order has been completed
   await Product.findByIdAndUpdate(
     product,
     { $inc: { sell: 1 } },
