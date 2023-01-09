@@ -70,7 +70,7 @@ module.exports = class Email {
     // 1) Render HTML based on a pug template
     const html = pug.renderFile(`${__dirname}/../views/email/${template}.pug`, {
       firstName: this.firstName,
-      url: this.url,
+      url: `https://nasim67reja.github.io/CareoCIty-ecommerce/#/account/profile`,
       subject,
     });
 
