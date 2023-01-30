@@ -24,30 +24,38 @@ router
     userController.createUser
   );
 
-router.route('/:id').get(userController.getUser);
-
 // Protect all routes after this middleware
-router.use(authController.protect);
+// router.use(authController.protect);
 
-router.patch('/updateMyPassword', authController.updatePassword);
-router.get('/me', userController.getMe, userController.getUser);
+router.patch(
+  '/updateMyPassword',
+  authController.protect,
+  authController.updatePassword
+);
+router.get(
+  '/me',
+  authController.protect,
+  userController.getMe,
+  userController.getUser
+);
 
 router.patch(
   '/updateMe',
+  authController.protect,
   userController.uploadUserPhoto,
   userController.resizeUserPhoto,
   userController.updateMe
 );
-router.patch('/deleteMe', userController.deleteMe);
+router.patch('/deleteMe', authController.protect, userController.deleteMe);
 
 // router
 //   .route('/')
 //   .get(userController.getAllUsers)
 //   .post(authController.restrictTo('admin'), userController.createUser);
 
-// router.route('/:id').get(userController.getUser);
+router.route('/:id').get(userController.getUser);
 
-router.use(authController.restrictTo('admin'));
+router.use(authController.protect, authController.restrictTo('admin'));
 router
   .route('/:id')
   .patch(
