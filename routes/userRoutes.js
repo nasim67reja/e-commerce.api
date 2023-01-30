@@ -14,6 +14,18 @@ router.get('/logout', authController.logout);
 router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
 
+// now non logged in use can see the Users and user
+router
+  .route('/')
+  .get(userController.getAllUsers)
+  .post(
+    authController.protect,
+    authController.restrictTo('admin'),
+    userController.createUser
+  );
+
+router.route('/:id').get(userController.getUser);
+
 // Protect all routes after this middleware
 router.use(authController.protect);
 
@@ -28,12 +40,12 @@ router.patch(
 );
 router.patch('/deleteMe', userController.deleteMe);
 
-router
-  .route('/')
-  .get(userController.getAllUsers)
-  .post(authController.restrictTo('admin'), userController.createUser);
+// router
+//   .route('/')
+//   .get(userController.getAllUsers)
+//   .post(authController.restrictTo('admin'), userController.createUser);
 
-router.route('/:id').get(userController.getUser);
+// router.route('/:id').get(userController.getUser);
 
 router.use(authController.restrictTo('admin'));
 router

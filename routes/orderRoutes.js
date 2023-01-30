@@ -3,6 +3,8 @@ const orderController = require('../controllers/orderController');
 const authController = require('../controllers/authController');
 
 const router = express.Router();
+// non logged in user can see all the orders
+router.route('/').get(orderController.getAllOrders);
 
 router.use(authController.protect);
 
