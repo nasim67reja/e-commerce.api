@@ -13,6 +13,8 @@ router
     cartController.createCartItem
   );
 
+router.use(authController.protect);
+
 router
   .route('/:id')
   .get(cartController.getcartItem)
