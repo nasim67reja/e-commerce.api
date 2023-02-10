@@ -34,6 +34,14 @@ With these steps, you should be able to get the e-commerce API project up and ru
 
 ## How to use the API
 
+### API Documentation
+
+- You can find the API documentation [here](https://github.com/nasim67reja/e-commerce.api/blob/main/api-docs.md).
+
+- You can find the API documentation for this project in the file `api-docs.md`.
+
+- You can find the API documentation in [Postman](https://documenter.getpostman.com/view/21404920/2s935rK2rN).
+
 ### Examples
 
 The following examples demonstrate how to use the e-commerce API.
